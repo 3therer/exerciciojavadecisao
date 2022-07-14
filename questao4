@@ -1,0 +1,30 @@
+package lacoDecisao;
+
+import java.util.Scanner;
+
+public class Questao4 {
+
+	public static void main(String[] args) {
+
+		int num;
+		double numImpar,numPar;
+						
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Insira um valor: ");
+		num = leia.nextInt();
+		
+		if(num % 2 == 0)
+		{
+			numPar = Math.sqrt(num);
+			System.out.printf("\nO valor inserido é par. Sua raiz quadrada é: %.2f",numPar);
+		}
+		else
+		{
+			numImpar = Math.pow(num,2);
+			System.out.printf("\nO valor inserido é  ímpar. Seu valor ao quadrado é: %.2f",numImpar);
+		}
+	}
+
+
+	}
